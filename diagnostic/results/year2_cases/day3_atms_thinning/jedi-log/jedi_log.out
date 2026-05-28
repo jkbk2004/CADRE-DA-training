@@ -1,0 +1,117 @@
+================================================================================
+  JEDI Variational DA - Diagnostic Report
+================================================================================
+
+--------------------------------------------------------------------------------
+  1. CONFIGURATION SUMMARY
+--------------------------------------------------------------------------------
+  Cost Type                     : 3D-Var
+  Analysis Time                 : 2024-02-24T00:00:00Z
+  Window Begin                  : 2024-02-23T21:00:00Z
+  Window Length                 : PT6H
+  Outer Resolution              : C96
+  Nlevels                       : 127
+  Static Weight                 : 0.125
+  Ensemble Weight               : 0.875
+  Ensemble Members              : 2
+  Minimizer                     : DRPCG
+  Ninner                        : [2, 4]
+  Inner Resolution              : C48
+
+--------------------------------------------------------------------------------
+  2. OBSERVATION COUNTS
+--------------------------------------------------------------------------------
+
+  Obs Type                          Locations    Total Obs  Assimilated   Rejected   Assim%
+  ------------------------------ ------------ ------------ ------------ ---------- --------
+  conventional_ps                     199,096      116,459      107,491      8,968    92.3%
+  gnssro_cosmic2                      365,047      363,132      227,803    135,329    62.7%
+  ATMS N20                              2,959       65,098       44,351     20,747    68.1%
+    +-- brightnessTemperature_1                                     1,519
+    +-- brightnessTemperature_2                                     1,486
+    +-- brightnessTemperature_3                                     1,542
+    +-- brightnessTemperature_4                                     1,575
+    +-- brightnessTemperature_5                                     1,577
+    +-- brightnessTemperature_6                                     1,581
+    +-- brightnessTemperature_7                                     1,900
+    +-- brightnessTemperature_8                                     2,950
+    +-- brightnessTemperature_9                                     2,942
+    +-- brightnessTemperature_10                                    2,944
+    +-- brightnessTemperature_11                                    2,948
+    +-- brightnessTemperature_12                                    2,939
+    +-- brightnessTemperature_13                                    2,787
+    +-- brightnessTemperature_14                                    2,913
+    +-- brightnessTemperature_15                                    2,943
+    +-- brightnessTemperature_16                                    1,316
+    +-- brightnessTemperature_17                                    1,422
+    +-- brightnessTemperature_18                                    1,434
+    +-- brightnessTemperature_19                                    1,440
+    +-- brightnessTemperature_20                                    1,415
+    +-- brightnessTemperature_21                                    1,394
+    +-- brightnessTemperature_22                                    1,384
+  ascatw_ascat_metop-b                 14,896       29,792       25,650      4,142    86.1%
+    +-- windEastward                                               12,825
+    +-- windNorthward                                              12,825
+  satwind_goes-16                     802,894    1,605,788      191,396  1,414,392    11.9%
+    +-- windEastward                                               95,698
+    +-- windNorthward                                              95,698
+  ------------------------------ ------------ ------------ ------------ ---------- --------
+  TOTAL                             1,384,892    2,180,269      596,691  1,583,578    27.4%
+
+  Locations = unique obs locations (nlocs).
+  Total Obs = nlocs x channels/variables (before QC).
+  Assimilated = obs passing all QC (used in Jo).
+
+--------------------------------------------------------------------------------
+  3. Jo/n EVOLUTION ACROSS OUTER ITERATIONS
+--------------------------------------------------------------------------------
+
+  Obs Type                            Outer 0      Outer 1      Outer 2          Delta
+  ------------------------------ ------------ ------------ ------------ --------------
+  conventional_ps                    0.225660     0.203340     0.189865      -0.035795
+  gnssro_cosmic2                     0.315383     0.296361     0.259750      -0.055633
+  ATMS N20                           0.186130     0.173680     0.150806      -0.035324
+  ascatw_ascat_metop-b               0.576704     0.523970     0.434640      -0.142064
+  satwind_goes-16                    0.036782     0.036788     0.032445      -0.004337
+
+  Total Jo: 126,189.0 -> 117,533.4 -> 103,578.0
+  Reduction: 17.9%
+
+--------------------------------------------------------------------------------
+  4. COST FUNCTION CONVERGENCE
+--------------------------------------------------------------------------------
+
+  --- Outer Loop 0 (2 inner iters) ---
+    Iter                J               Jb             JoJc
+  ------ ---------------- ---------------- ----------------
+       0        126189.03             0.00        126189.03
+       1        123823.39            14.19        123809.20
+       2        117464.75           271.92        117192.84
+
+  --- Outer Loop 1 (4 inner iters) ---
+    Iter                J               Jb             JoJc
+  ------ ---------------- ---------------- ----------------
+       0        117805.32           271.92        117533.40
+       1        115062.94           300.18        114762.76
+       2        113860.07           368.76        113491.31
+       3        109474.34          1054.49        108419.85
+       4        105069.50          2380.90        102688.60
+
+--------------------------------------------------------------------------------
+  5. CHI-SQUARED CONSISTENCY (Final Iteration)
+--------------------------------------------------------------------------------
+
+  Chi^2 ~ (H(x)-y)^T R^{-1} (H(x)-y).  E[Chi^2/P] = 1.0 if R,B correct.
+  JEDI prints Jo = 1/2 * Chi^2, so Chi^2/P = 2 * (Jo/P).
+
+  Obs Type                                   Jo          P     Chi2/P                           Status
+  ------------------------------ -------------- ---------- ---------- --------------------------------
+  conventional_ps                      20408.70    107,491   0.379730 R severely overestimated (too large)
+  gnssro_cosmic2                       59122.70    227,614   0.519500      R overestimated (too large)
+  ATMS N20                              6688.37     44,351   0.301612 R severely overestimated (too large)
+  ascatw_ascat_metop-b                 11148.50     25,650   0.869280                  OK (calibrated)
+  satwind_goes-16                       6209.89    191,396   0.064891 R severely overestimated (too large)
+  ------------------------------ -------------- ---------- ---------- --------------------------------
+  TOTAL                               103578.16    596,502   0.347285 R severely overestimated (too large)
+
+================================================================================

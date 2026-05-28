@@ -1,0 +1,101 @@
+================================================================================
+  JEDI Variational DA - Diagnostic Report
+================================================================================
+
+--------------------------------------------------------------------------------
+  1. CONFIGURATION SUMMARY
+--------------------------------------------------------------------------------
+  Cost Type                     : 3D-Var
+  Analysis Time                 : 2024-02-24T00:00:00Z
+  Window Begin                  : 2024-02-23T21:00:00Z
+  Window Length                 : PT6H
+  Outer Resolution              : C96
+  Nlevels                       : 127
+  Static Weight                 : 0.125
+  Ensemble Weight               : 0.875
+  Ensemble Members              : 2
+  Minimizer                     : DRPCG
+  Ninner                        : [2, 4]
+  Inner Resolution              : C48
+
+--------------------------------------------------------------------------------
+  2. OBSERVATION COUNTS
+--------------------------------------------------------------------------------
+
+  Obs Type                          Locations    Total Obs  Assimilated   Rejected   Assim%
+  ------------------------------ ------------ ------------ ------------ ---------- --------
+  ATMS N20                                  1           22           22          0   100.0%
+    +-- brightnessTemperature_1                                         1
+    +-- brightnessTemperature_2                                         1
+    +-- brightnessTemperature_3                                         1
+    +-- brightnessTemperature_4                                         1
+    +-- brightnessTemperature_5                                         1
+    +-- brightnessTemperature_6                                         1
+    +-- brightnessTemperature_7                                         1
+    +-- brightnessTemperature_8                                         1
+    +-- brightnessTemperature_9                                         1
+    +-- brightnessTemperature_10                                        1
+    +-- brightnessTemperature_11                                        1
+    +-- brightnessTemperature_12                                        1
+    +-- brightnessTemperature_13                                        1
+    +-- brightnessTemperature_14                                        1
+    +-- brightnessTemperature_15                                        1
+    +-- brightnessTemperature_16                                        1
+    +-- brightnessTemperature_17                                        1
+    +-- brightnessTemperature_18                                        1
+    +-- brightnessTemperature_19                                        1
+    +-- brightnessTemperature_20                                        1
+    +-- brightnessTemperature_21                                        1
+    +-- brightnessTemperature_22                                        1
+  ------------------------------ ------------ ------------ ------------ ---------- --------
+  TOTAL                                     1           22           22          0   100.0%
+
+  Locations = unique obs locations (nlocs).
+  Total Obs = nlocs x channels/variables (before QC).
+  Assimilated = obs passing all QC (used in Jo).
+
+--------------------------------------------------------------------------------
+  3. Jo/n EVOLUTION ACROSS OUTER ITERATIONS
+--------------------------------------------------------------------------------
+
+  Obs Type                            Outer 0      Outer 1      Outer 2          Delta
+  ------------------------------ ------------ ------------ ------------ --------------
+  ATMS N20                           0.306161     0.251159     0.250060      -0.056101
+
+  Total Jo: 6.7 -> 5.5 -> 5.5
+  Reduction: 18.3%
+
+--------------------------------------------------------------------------------
+  4. COST FUNCTION CONVERGENCE
+--------------------------------------------------------------------------------
+
+  --- Outer Loop 0 (2 inner iters) ---
+    Iter                J               Jb             JoJc
+  ------ ---------------- ---------------- ----------------
+       0             6.74             0.00             6.74
+       1             5.86             0.55             5.31
+       2             5.77             0.73             5.04
+
+  --- Outer Loop 1 (4 inner iters) ---
+    Iter                J               Jb             JoJc
+  ------ ---------------- ---------------- ----------------
+       0             6.26             0.73             5.53
+       1             6.24             0.82             5.42
+       2             6.24             0.85             5.39
+       3             6.24             0.85             5.39
+       4             6.24             0.85             5.39
+
+--------------------------------------------------------------------------------
+  5. CHI-SQUARED CONSISTENCY (Final Iteration)
+--------------------------------------------------------------------------------
+
+  Chi^2 ~ (H(x)-y)^T R^{-1} (H(x)-y).  E[Chi^2/P] = 1.0 if R,B correct.
+  JEDI prints Jo = 1/2 * Chi^2, so Chi^2/P = 2 * (Jo/P).
+
+  Obs Type                                   Jo          P     Chi2/P                           Status
+  ------------------------------ -------------- ---------- ---------- --------------------------------
+  ATMS N20                                 5.50         22   0.500120      R overestimated (too large)
+  ------------------------------ -------------- ---------- ---------- --------------------------------
+  TOTAL                                    5.50         22   0.500121      R overestimated (too large)
+
+================================================================================
