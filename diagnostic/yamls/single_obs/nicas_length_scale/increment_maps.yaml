@@ -14,23 +14,23 @@ zonal_mean:
 
 experiments:
   - name: ctrl
-    prefix: "/work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output/ufsda.t00z.atminc.cubed_sphere_grid.tile"
+    prefix: "/work2/noaa/epic-explorer/cadre2026/single_obs/cadre26.ctrl/output/ufsda.t00z.atminc.cubed_sphere_grid.tile"
 
   - name: nicas_length_scale
-    prefix: "/work2/noaa/epic-explorer/cadre2026/cadre26.8896455.day2_nicas_length_scale/output/ufsda.t00z.atminc.cubed_sphere_grid.tile"
+    prefix: "/work2/noaa/epic-explorer/cadre2026/single_obs/cadre26.nicas_length_scale/output/ufsda.t00z.atminc.cubed_sphere_grid.tile"
 
 grid:
   prefix: "/work2/noaa/epic/CADRE2026/grid/C96_grid.tile"
 
-output_dir: "./day2_nicas_length_scale/inc_plots"
+output_dir: "./single_obs/nicas_length_scale/inc_plots"
 
 amplify:
-  enabled: false
-  factor: 8.0
-  apply_to_diff: false
+  enabled: true
+  factor: 2.0
+  apply_to_diff: true
 
 zoom:
-  enabled: false
+  enabled: true
   lat_min: -20
   lat_max: 20
   lon_min: -140
