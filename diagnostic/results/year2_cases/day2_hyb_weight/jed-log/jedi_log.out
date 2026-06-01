@@ -101,16 +101,17 @@
   5. CHI-SQUARED CONSISTENCY (Final Iteration)
 --------------------------------------------------------------------------------
 
-  Jo ~ chi-squared(P).  E[Jo/P] = 1.0 if R,B correct.
+  Chi^2 ~ (H(x)-y)^T R^{-1} (H(x)-y).  E[Chi^2/P] = 1.0 if R,B correct.
+  JEDI prints Jo = 1/2 * Chi^2, so Chi^2/P = 2 * (Jo/P).
 
-  Obs Type                                   Jo          P       Jo/P                 Status
-  ------------------------------ -------------- ---------- ---------- ----------------------
-  conventional_ps                      17676.80    107,491   0.164449       !! OVERESTIMATED
-  gnssro_cosmic2                       48553.80    227,413   0.213505       !! OVERESTIMATED
-  ATMS N20                             15514.70    167,540   0.092603       !! OVERESTIMATED
-  ascatw_ascat_metop-b                  7130.58     25,650   0.277995       !! OVERESTIMATED
-  satwind_goes-16                       5142.08    191,396   0.026866       !! OVERESTIMATED
-  ------------------------------ -------------- ---------- ---------- ----------------------
-  TOTAL                                94017.96    719,490   0.130673       !! OVERESTIMATED
+  Obs Type                                   Jo          P     Chi2/P                           Status
+  ------------------------------ -------------- ---------- ---------- --------------------------------
+  conventional_ps                      17676.80    107,491   0.328898 R severely overestimated (too large)
+  gnssro_cosmic2                       48553.80    227,413   0.427010 R severely overestimated (too large)
+  ATMS N20                             15514.70    167,540   0.185206 R severely overestimated (too large)
+  ascatw_ascat_metop-b                  7130.58     25,650   0.555990      R overestimated (too large)
+  satwind_goes-16                       5142.08    191,396   0.053732 R severely overestimated (too large)
+  ------------------------------ -------------- ---------- ---------- --------------------------------
+  TOTAL                                94017.96    719,490   0.261346 R severely overestimated (too large)
 
 ================================================================================

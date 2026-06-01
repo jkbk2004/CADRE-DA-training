@@ -1,0 +1,12 @@
+[INFO] Loaded YAML: yamls/day3_no_atms/obs_diag.yaml
+[INFO] Processing GNSSRO (scalar) from /work2/noaa/epic-explorer/cadre2026/cadre26.8900653.day3_no_atms/output/diag.gnssro_cosmic2_2024022400.nc
+[SAVED] ./day3_no_atms/obs-diag/gnssro_hist.png
+[INFO] Processing SATWND (vector) from /work2/noaa/epic-explorer/cadre2026/cadre26.8900653.day3_no_atms/output/diag.satwnd.abi_goes-16_2024022400.nc
+[SAVED] ./day3_no_atms/obs-diag/satwnd_u_hist.png
+[SAVED] ./day3_no_atms/obs-diag/satwnd_v_hist.png
+[INFO] Processing SCATWND (vector) from /work2/noaa/epic-explorer/cadre2026/cadre26.8900653.day3_no_atms/output/diag.scatwnd.ascat_metop-b_2024022400.nc
+[SAVED] ./day3_no_atms/obs-diag/scatwnd_u_hist.png
+[SAVED] ./day3_no_atms/obs-diag/scatwnd_v_hist.png
+[INFO] Processing CONVENTIONAL_PS (scalar) from /work2/noaa/epic-explorer/cadre2026/cadre26.8900653.day3_no_atms/output/diag.conventional_ps_2024022400.nc
+[SAVED] ./day3_no_atms/obs-diag/conventional_ps_hist.png
+[INFO] Diagnostics complete.

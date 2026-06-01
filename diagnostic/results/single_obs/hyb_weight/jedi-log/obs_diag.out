@@ -1,0 +1,58 @@
+[INFO] Loaded YAML: yamls/single_obs/hyb_weight/obs_diag.yaml
+[INFO] Processing ATMS (atms) from /work2/noaa/epic-explorer/cadre2026/single_obs/cadre26.hyb_weight/output/diag.atms_n20_2024022400.nc
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch01_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch02_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch03_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch04_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch05_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch06_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch07_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch08_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch09_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch10_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch11_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch12_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch13_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch14_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch15_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch16_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch17_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch18_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch19_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch20_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch21_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_ch22_hist.png
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_stats.png
+[DEBUG] Ch 01  RMS_n^2 = 0.2636
+[DEBUG] Ch 02  RMS_n^2 = 0.2379
+[DEBUG] Ch 03  RMS_n^2 = 0.2029
+[DEBUG] Ch 04  RMS_n^2 = 0.1932
+[DEBUG] Ch 05  RMS_n^2 = 0.1809
+[DEBUG] Ch 06  RMS_n^2 = 0.0117
+[DEBUG] Ch 07  RMS_n^2 = 0.8717
+[DEBUG] Ch 08  RMS_n^2 = 0.2392
+[DEBUG] Ch 09  RMS_n^2 = 0.8325
+[DEBUG] Ch 10  RMS_n^2 = 0.3683
+[DEBUG] Ch 11  RMS_n^2 = 0.0050
+[DEBUG] Ch 12  RMS_n^2 = 0.3178
+[DEBUG] Ch 13  RMS_n^2 = 0.5417
+[DEBUG] Ch 14  RMS_n^2 = 1.9360
+[DEBUG] Ch 15  RMS_n^2 = 0.4307
+[DEBUG] Ch 16  RMS_n^2 = 0.2668
+[DEBUG] Ch 17  RMS_n^2 = 0.1004
+[DEBUG] Ch 18  RMS_n^2 = 0.0722
+[DEBUG] Ch 19  RMS_n^2 = 0.0643
+[DEBUG] Ch 20  RMS_n^2 = 0.0660
+[DEBUG] Ch 21  RMS_n^2 = 0.1479
+[DEBUG] Ch 22  RMS_n^2 = 0.2082
+--------------------------------------------------------
+[INFO] ATMS total obs used (QC2==0) = 22
+[INFO] ATMS RMS_n^2 (OMB) = 0.343597
+[INFO] ATMS RMS_n^2 (OMA) = 0.233038
+--------------------------------------------------------
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_stats_extended.png
+[ATMS] Scan-position diagnostics (QC2-filtered)...
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_scan_position_qc2.png
+[ATMS] Latitude-binned diagnostics (QC2-filtered)...
+[SAVED] ./single_obs/hyb_weight/obs-diag/atms_latbins_qc2.png
+[INFO] Diagnostics complete.

@@ -1,0 +1,75 @@
+[INFO] Loaded YAML: yamls/day1/obs_diag.yaml
+[INFO] Processing ATMS (atms) from /work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output/diag.atms_n20_2024022400.nc
+[SAVED] ./day1_ctrl/obs-diag/atms_ch01_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch02_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch03_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch04_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch05_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch06_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch07_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch08_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch09_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch10_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch11_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch12_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch13_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch14_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch15_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch16_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch17_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch18_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch19_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch20_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch21_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_ch22_hist.png
+[SAVED] ./day1_ctrl/obs-diag/atms_stats.png
+[DEBUG] Ch 01  RMS_n^2 = 0.1741
+[DEBUG] Ch 02  RMS_n^2 = 0.1050
+[DEBUG] Ch 03  RMS_n^2 = 0.0844
+[DEBUG] Ch 04  RMS_n^2 = 0.0837
+[DEBUG] Ch 05  RMS_n^2 = 0.1673
+[DEBUG] Ch 06  RMS_n^2 = 0.2682
+[DEBUG] Ch 07  RMS_n^2 = 0.5002
+[DEBUG] Ch 08  RMS_n^2 = 0.3438
+[DEBUG] Ch 09  RMS_n^2 = 0.3945
+[DEBUG] Ch 10  RMS_n^2 = 0.5019
+[DEBUG] Ch 11  RMS_n^2 = 0.4862
+[DEBUG] Ch 12  RMS_n^2 = 0.5836
+[DEBUG] Ch 13  RMS_n^2 = 0.6355
+[DEBUG] Ch 14  RMS_n^2 = 0.9656
+[DEBUG] Ch 15  RMS_n^2 = 0.2449
+[DEBUG] Ch 16  RMS_n^2 = 0.2509
+[DEBUG] Ch 17  RMS_n^2 = 0.0935
+[DEBUG] Ch 18  RMS_n^2 = 0.1175
+[DEBUG] Ch 19  RMS_n^2 = 0.1970
+[DEBUG] Ch 20  RMS_n^2 = 0.2438
+[DEBUG] Ch 21  RMS_n^2 = 0.2977
+[DEBUG] Ch 22  RMS_n^2 = 0.3305
+--------------------------------------------------------
+[INFO] ATMS total obs used (QC2==0) = 167,540
+[INFO] ATMS RMS_n^2 (OMB) = 0.372578
+[INFO] ATMS RMS_n^2 (OMA) = 0.252201
+--------------------------------------------------------
+[SAVED] ./day1_ctrl/obs-diag/atms_stats_extended.png
+[ATMS] Scan-position diagnostics (QC2-filtered)...
+[SAVED] ./day1_ctrl/obs-diag/atms_scan_position_qc2.png
+[ATMS] Latitude-binned diagnostics (QC2-filtered)...
+[SAVED] ./day1_ctrl/obs-diag/atms_latbins_qc2.png
+[DEBUG] Selected ATMS channels from YAML: [1, 2]
+[SAVED] ./day1_ctrl/obs-diag/scatter_maps/atms_ch01_omb_map.png
+[SAVED] ./day1_ctrl/obs-diag/scatter_maps/atms_ch02_omb_map.png
+[INFO] Processing GNSSRO (scalar) from /work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output/diag.gnssro_cosmic2_2024022400.nc
+[SAVED] ./day1_ctrl/obs-diag/gnssro_hist.png
+[SAVED] ./day1_ctrl/obs-diag/scatter_maps/gnssro_omb_map.png
+[INFO] Processing SATWND (vector) from /work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output/diag.satwnd.abi_goes-16_2024022400.nc
+[SAVED] ./day1_ctrl/obs-diag/satwnd_u_hist.png
+[SAVED] ./day1_ctrl/obs-diag/satwnd_v_hist.png
+[SAVED] ./day1_ctrl/obs-diag/scatter_maps/satwnd_omb_map.png
+[INFO] Processing SCATWND (vector) from /work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output/diag.scatwnd.ascat_metop-b_2024022400.nc
+[SAVED] ./day1_ctrl/obs-diag/scatwnd_u_hist.png
+[SAVED] ./day1_ctrl/obs-diag/scatwnd_v_hist.png
+[SAVED] ./day1_ctrl/obs-diag/scatter_maps/scatwnd_omb_map.png
+[INFO] Processing CONVENTIONAL_PS (scalar) from /work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output/diag.conventional_ps_2024022400.nc
+[SAVED] ./day1_ctrl/obs-diag/conventional_ps_hist.png
+[SAVED] ./day1_ctrl/obs-diag/scatter_maps/conventional_ps_omb_map.png
+[INFO] Diagnostics complete.

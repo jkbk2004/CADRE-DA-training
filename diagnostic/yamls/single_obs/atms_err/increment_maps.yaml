@@ -26,7 +26,7 @@ output_dir: "./single_obs/atms_err/inc_plots"
 
 amplify:
   enabled: true
-  factor: 2.0
+  factor: 4.0
   apply_to_diff: true
 
 zoom:
