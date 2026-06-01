@@ -1,7 +1,7 @@
-output_dir: "./day1_ctrl/obs-diag"
+output_dir: "./single_obs/ctrl/obs-diag"
 
 # Shared prefix for all diag files
-prefix_root: "/work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output"
+prefix_root: "/work2/noaa/epic-explorer/single_obs//cadre26.ctrl/output"
 
 observations:
 
@@ -20,47 +20,3 @@ observations:
       latbins: true
       scatter_map: true
       scatter_map_channels: [1, 2]
-
-  # ------------------------------------------------------------
-  # GNSSRO Bending Angle (scalar)
-  # ------------------------------------------------------------
-  - label: GNSSRO
-    type: scalar
-    variable: bendingAngle
-    file: "diag.gnssro_cosmic2_2024022400.nc"
-    diagnostics:
-      hist: true
-      scatter_map: true
-
-  # ------------------------------------------------------------
-  # SATWND Vector Winds (QC1)
-  # ------------------------------------------------------------
-  - label: SATWND
-    type: vector
-    variable: windSpeed
-    file: "diag.satwnd.abi_goes-16_2024022400.nc"
-    diagnostics:
-      hist: true
-      scatter_map: true
-
-  # ------------------------------------------------------------
-  # SCATWND Vector Winds (QC1)
-  # ------------------------------------------------------------
-  - label: SCATWND
-    type: vector
-    variable: windSpeed
-    file: "diag.scatwnd.ascat_metop-b_2024022400.nc"
-    diagnostics:
-      hist: true
-      scatter_map: true
-
-  # ------------------------------------------------------------
-  # Conventional Surface Pressure (scalar)
-  # ------------------------------------------------------------
-  - label: CONVENTIONAL_PS
-    type: scalar
-    variable: stationPressure
-    file: "diag.conventional_ps_2024022400.nc"
-    diagnostics:
-      hist: true
-      scatter_map: true
