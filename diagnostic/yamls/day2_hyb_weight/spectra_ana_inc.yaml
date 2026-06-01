@@ -14,7 +14,7 @@ zonal_mean:
 
 experiments:
   - name: ctrl
-    prefix: "/work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/ufsda.t00z.atminc.cubed_sphere_grid.tile"
+    prefix: "/work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/output/ufsda.t00z.atminc.cubed_sphere_grid.tile"
 
   - name: hyb-weight
     prefix: "/work2/noaa/epic-explorer/cadre2026/cadre26.8895942.day2_hyb_weight/output/ufsda.t00z.atminc.cubed_sphere_grid.tile"
