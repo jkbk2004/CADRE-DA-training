@@ -1,0 +1,25 @@
+vars:
+  - T_inc
+  - sphum_inc
+  - u_inc
+  - v_inc
+
+levels:
+  - 126
+  - 75
+
+zonal_mean:
+  enabled: true
+  full_vertical: true
+
+experiments:
+  - name: ctrl
+    prefix: "/work2/noaa/epic-explorer/cadre2026/cadre26.8895896.day1_ctrl/ufsda.t00z.atminc.cubed_sphere_grid.tile"
+
+  - name: hyb-weight
+    prefix: "/work2/noaa/epic-explorer/cadre2026/cadre26.8895942.day2_hyb_weight/output/ufsda.t00z.atminc.cubed_sphere_grid.tile"
+
+grid:
+  prefix: "/work2/noaa/epic/CADRE2026/grid/C96_grid.tile"
+
+output_dir: "./day2_hyb_weight/spectra-inc"
